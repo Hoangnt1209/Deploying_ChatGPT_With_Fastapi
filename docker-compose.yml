@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  app:
+    image: back-end
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

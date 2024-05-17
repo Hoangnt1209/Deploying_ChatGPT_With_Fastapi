@@ -62,3 +62,6 @@ async def ask_question(user_input: UserInput):
         return {"User": user_input.user_input, "Assistant": assistant_response}
     except Exception as e:
         return {"error": str(e)}
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
